@@ -78,10 +78,6 @@
 <h2>
 <a id="beiträge-verfassen" class="anchor" href="#beitr%C3%A4ge-verfassen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Beiträge verfassen</h2>
 
-<ul>
-<li>als Entwurf kennzeichnen</li>
-</ul>
-
 <p>Um einen neuen Beitrag zu verfassen, stehen im Ordner <code>/lid-site</code> derzeit zwei Vorlagedateien zur Verfügung:</p>
 
 <ul>
@@ -90,11 +86,28 @@
 </ul>
 
 <h2>
+<a id="slideshow-einbinden" class="anchor" href="#slideshow-einbinden" aria-hidden="true"><span class="octicon octicon-link"></span></a>Slideshow einbinden</h2>
+<p>Wenn der Beitrag eine Slideshow enthalten soll, so werden alle benötigten Informationen im Frontmatter angegeben</p>
+<p>Frontmatter Syntax:</p>
+<pre><code>
+[[slideshow]]
+  bild = "/img/78/beitrag/bild1.jpg"
+  titel = "Erstes Bild"
+  untertitel = "Untertitel Bild 1"
+  
+[[slideshow]]
+  bild = "/img/78/beitrag/bild2.jpg"
+  titel = "Zweites Bild"
+  untertitel = "Untertitel Bild 2"
+</code></pre>
+
+<h2>
 <a id="features-via-shortcodes-einbinden" class="anchor" href="#features-via-shortcodes-einbinden" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features via shortcodes einbinden</h2>
 <p>Shortcodes werden mit <code>{{% shortcode %}}</code> eingebunden.</p>
 <p>Shortcodeparameter werden mit folgender <strong>Syntax</strong> übergeben:</p>
 <pre><code>{{% bild pfad="" untertitel=""  %}}
 </code></pre>
+
 
 <h3>
 <a id="editiermöglichkeiten" class="anchor" href="#editierm%C3%B6glichkeiten" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editiermöglichkeiten:</h3>
