@@ -173,7 +173,9 @@ small {
 hr {
   border:0;
   margin:30px 0;
-  border-bottom: 1px dashed black;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  border-bottom-color: black;
 }
 
 footer {
