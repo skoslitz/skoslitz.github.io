@@ -172,9 +172,8 @@ small {
 
 hr {
   border:0;
-  background:#e5e5e5;
-  height:1px;
-  margin:0 0 20px;
+  margin:30px 0;
+  border-bottom: 1px dashed black;
 }
 
 footer {
