@@ -17,7 +17,7 @@ p, ul, ol, table, pre, dl {
 }
 
 h1, h2, h3 {
-  line-height:1.1;
+  line-height:1.5;
 }
 
 h1 {
@@ -59,9 +59,9 @@ blockquote {
 
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color:#333;
+  color:crimson;
   background: #f8f8f8;  
-  font-size:12px;
+  font-size:15px;
 }
 
 pre {
