@@ -17,7 +17,7 @@
       <header>
         <h1>LiD-Online Kompendium</h1>
         <p>Leitfaden zur Contenterstellung</p>
-        <code>Version 27/02/2015</code>
+        <code>Version 03/03/2015</code>
       </header>
       <section>
         
@@ -38,15 +38,15 @@
 <h3>
 <a id="Überschriften" class="anchor" href="#%C3%9Cberschriften" aria-hidden="true"><span class="octicon octicon-link"></span></a>Überschriften</h3>
 
-<p>Es stehen fünf Überschriftsebenen zur Verfügung, wobei H1 (Header 1) die größtmögliche darstellt.</p>
+<p>Es stehen fünf Überschriftsebenen zur Verfügung. H1 (Header 1) und H2 sind jedoch bereits durch das Seitenlayout belegt.</p>
+<p>Somit stehen im Contentbereich der Beiträge nur die Überschriftsgrößen H3 - H5 zur Verfügung</p>
 
 <p><strong>Syntax:</strong> Ein Rautenzeichen <code>#</code> leitet eine Überschrift ein.</p>
 
 <pre>
-  <code># Überschrift 1</code>
-  <code>## Überschrift 2</code>
-  <code>...</code>
-  <code>##### Überschrift 5</code>
+  <code>### Überschrift 3</code>
+  <code>#### Überschrift 4</code>
+    <code>##### Überschrift 5</code>
 </pre>
 
 <h3>
@@ -123,7 +123,14 @@
 <a id="video-einbinden" aria-hidden="true"><span class="octicon octicon-link"></span></a>Video einbinden</h3>
 <p>Wenn der Beitrag ein oder mehrere Videos enthalten soll, so werden alle benötigten Informationen im Frontmatter angegeben.</p>
 <p><strong>Syntax</strong> Frontmatter:</p>
-<pre><code>video = ["Vimeo_id_des_Videos", "59179537"]</code></pre>
+<pre><code>[[video]]
+  id = "Vimeo_id_des_Videos"
+  titel = "Blühende Landschaften"
+  untertitel = "Eine Reise durch ..."
+  beschreibung = "Hier kommt die Beschreibung rein"
+  quelle = "Wer hat's erfunden?"
+  laenge = "55 Minuten"
+</code></pre>
 
 <h3>
 <a id="exkursion-einbinden" class="anchor" href="#exkursion-einbinden" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exkursion einbinden</h3>
@@ -157,6 +164,14 @@
 </code></pre>
 <p><strong>Beispiel:</strong></p>
 <pre><code>{{% bild pfad="/img/78/beitrag/titelfotos/bild.jpg" untertitel="Quelle: N.N. "  %}}</code></pre>
+
+<h3>
+<a id="abbildung-einfuegen" class="anchor" href="#abbildung-einfuegen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Abbildung einfügen:</h3>
+<p><strong>Syntax</strong> Shortcode:</p>
+<pre><code>{{% abbildung pfad="" untertitel="" quelle="" %}}
+</code></pre>
+<p><strong>Beispiel:</strong></p>
+<pre><code>{{% bild pfad="/img/78/beitrag/abbildungen/abb01.jpg" untertitel="Eine historische Ansicht" quelle="N.N." %}}</code></pre>
 
 
 <hr>
