@@ -152,13 +152,16 @@ Beinhaltet der Zeichensatz jedoch ein Markdownsteuerzeichen (z.B: ein <code>*</c
 
 <h3>
 <a id="exkursion-einbinden" class="anchor" href="#exkursion-einbinden" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exkursion einbinden</h3>
-<p>Die Koordinaten der Suchpunkte und alle weiteren relevanten Informationen für die Exkursion werden im Frontmatter angegeben</p>
+<p>Die Koordinaten der Suchpunkte, die Stationsnummer und alle weiteren relevanten Informationen für die Exkursion werden im Frontmatter angegeben</p>
+<p>Zwingend notwendig sind Angaben der Koordinaten (<code>lat lon</code>), Stationsnummern (<code>nr</code>) sowie das Kartenzentrum (<code>centroid</code>)</p>
 <p><strong>Syntax</strong> Frontmatter:</p>
 <pre><code>[[exkursion]]
+  nr = 1
   lat = 53.1233
   lon = 12.3454
   
 [[exkursion]]
+  nr = 2
   lat = 51.1233
   lon = 10.3454
 </code></pre>
