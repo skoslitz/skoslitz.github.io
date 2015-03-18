@@ -17,7 +17,7 @@
       <header>
         <h1>LiD-Online Kompendium</h1>
         <p>Leitfaden zur Contenterstellung</p>
-        <code>Version 17/03/2015</code> 
+        <code>Version 18/03/2015</code> 
       </header>
       <section>
         
@@ -107,6 +107,11 @@ Beinhaltet der Zeichensatz jedoch ein Markdownsteuerzeichen (z.B: ein <code>*</c
 <p>Die Frontmatter Markup Sprache ist <a href="https://github.com/toml-lang/toml">TOML</a>. Alle Frontmatter Inhalte müssen somit valides TOML sein.</p>
 
 <h3>
+<a id="kommentieren" class="anchor" href="#kommentieren" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ein Kommentar setzen</h3>
+<p>Jede Zeile eines Kommentares beginnt im Frontmatter mit einer <code>#</code></p>
+<pre><code># dies ist ein Kommentar</code></pre>
+
+<h3>
 <a id="beiträge-verfassen" class="anchor" href="#beitr%C3%A4ge-verfassen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Beiträge verfassen</h3>
 
 <p>Um einen neuen Beitrag zu verfassen, stehen derzeit zwei Vorlagedateien zur Verfügung.</p>
@@ -152,18 +157,19 @@ Beinhaltet der Zeichensatz jedoch ein Markdownsteuerzeichen (z.B: ein <code>*</c
 
 <h3>
 <a id="exkursion-einbinden" class="anchor" href="#exkursion-einbinden" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exkursion einbinden</h3>
-<p>Die Koordinaten der Suchpunkte, die Stationsnummer und alle weiteren relevanten Informationen für die Exkursion werden im Frontmatter angegeben</p>
+<p>Die Koordinaten der Suchpunkte, die Stationsnummer und alle weiteren relevanten Informationen für die Exkursion werden im Frontmatter angegeben. Zahlen können ohne <code>" "</code>, Wörter werden zwingend mit <code>" "</code>angegeben</p>
 <p>Zwingend notwendig sind Angaben der Koordinaten (<code>lat lon</code>), Stationsnummern (<code>nr</code>) sowie das Kartenzentrum (<code>centroid</code>)</p>
 <p><strong>Syntax</strong> Frontmatter:</p>
 <pre><code>[[exkursion]]
   nr = 1
   lat = 53.1233
   lon = 12.3454
-  
-[[exkursion]]
-  nr = 2
-  lat = 51.1233
-  lon = 10.3454
+  centroid = [51.331295, 12.374468]
+  exkursionstyp = [ "Fahrrad", "Fuß"]
+  exkursionsstart = "Anfang" 
+  exkursionsende = "Ende"
+  exkursionsstationen = 16
+  exkursionslaenge = 12
 </code></pre>
 
 <h4><mark>Entwurf</mark> Kartenzentrum</h4>
