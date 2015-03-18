@@ -158,7 +158,6 @@ Beinhaltet der Zeichensatz jedoch ein Markdownsteuerzeichen (z.B: ein <code>*</c
 <h3>
 <a id="exkursion-einbinden" class="anchor" href="#exkursion-einbinden" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exkursion einbinden</h3>
 <p>Die Koordinaten der Suchpunkte, die Stationsnummer und alle weiteren relevanten Informationen für die Exkursion werden im Frontmatter angegeben. Zahlen können ohne <code>" "</code>, Wörter werden zwingend mit <code>" "</code>angegeben</p>
-<p>Zwingend notwendig sind Angaben der Koordinaten (<code>lat lon</code>), Stationsnummern (<code>nr</code>) sowie das Kartenzentrum (<code>centroid</code>)</p>
 <p><strong>Syntax</strong> Frontmatter:</p>
 <pre><code>[[exkursion]]
   nr = 1
@@ -170,6 +169,8 @@ Beinhaltet der Zeichensatz jedoch ein Markdownsteuerzeichen (z.B: ein <code>*</c
   exkursionsende = "Ende"
   exkursionsstationen = 16
   exkursionslaenge = 12
+  # optional sind
+  literaturangaben = ["Homers letzter Satz, 2015"]
 </code></pre>
 
 <h4><mark>Entwurf</mark> Kartenzentrum</h4>
