@@ -168,7 +168,7 @@ Beinhaltet der Zeichensatz jedoch ein Markdownsteuerzeichen (z.B: ein <code>*</c
 <a id="exkursion-einbinden" class="anchor" href="#exkursion-einbinden" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exkursion einbinden</h3>
 <p>Zunächst werden stationsübergreifende Metadaten definiert (Title, Exkursionstyp, Description usw.). Stationsinformationen (Koordinaten der Suchpunkte, die Stationsnummer usw.) werden nach den allgemeinen Exkursionsangaben jeweils unter <code>[[exkursion]]</code> im Frontmatter angegeben. Zahlen können ohne <code>" "</code>, Wörter werden zwingend mit <code>" "</code>angegeben</p>
 <p><strong>Syntax</strong> Frontmatter:</p>
-<pre><code>id = "78_E_501"
+<pre><code>  id = "78_E_501"
   centroid = [51.331295, 12.374468]
   exkursionstyp = [ "Fahrrad", "Fuß"]
   exkursionsstart = "Anfang" 
@@ -183,7 +183,7 @@ Beinhaltet der Zeichensatz jedoch ein Markdownsteuerzeichen (z.B: ein <code>*</c
   lon = 12.3454
 </code></pre>
 
-<h4><mark>Entwurf</mark> Kartenzentrum</h4>
+<h4>Kartenzentrum</h4>
 <p>Das Kartenzentrum (centroid) wird im Frontmatter angegeben:</p>
 <p><strong>Syntax</strong> Frontmatter:</p>
 <pre><code>centroid = [51.311758, 12.343027]</code></pre>
@@ -194,8 +194,8 @@ Neben dem Titel der Station muss zwingend die Stationsnummer übergeben werden:<
 <p><strong>Syntax</strong> Shortcode:</p>
 <pre><code>{{% stationstitel titel="Die Lauer" nummer="1" %}}</code></pre>
 
-<h4><mark>Entwurf</mark> Literaturangaben</h4>
-<p>Literaturangaben der einzelnen Stationsbeschreibungen werden im Frontmatter angegeben:</p>
+<h4>Literaturangaben</h4>
+<p>Literaturangaben der jeweiligen Exkursion wird stationsübergreifend im Frontmatter angegeben:</p>
 <p><strong>Syntax</strong> Frontmatter:</p>
 <pre><code>literaturangaben = ["C. Montgomery Burns’ Wegweiser zur Weltherrschaft, 2014", "Homers letzter Satz, 2015"]</code></pre>
 
@@ -212,7 +212,7 @@ Neben dem Titel der Station muss zwingend die Stationsnummer übergeben werden:<
 <pre><code>{{% bild pfad="" titel=""  quellenangaben="" %}}
 </code></pre>
 <p><strong>Beispiel:</strong></p>
-<pre><code>{{% bild pfad="/78/beitrag/78_B_101/abb01.jpg" titel="N.N." quellenangaben="N.N."  %}}</code></pre>
+<pre><code>{{% bild pfad="/78/beitrag/78_B_101/78_B_101-abb01.jpg" titel="N.N." quellenangaben="N.N."  %}}</code></pre>
 
 <hr>
 
