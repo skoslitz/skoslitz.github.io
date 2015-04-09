@@ -17,7 +17,7 @@
       <header>
         <h1>LiD-Online Kompendium</h1>
         <p>Leitfaden zur Contenterstellung</p>
-        <code>Version 25/03/2015</code> 
+        <code>Version 09/04/2015</code> 
       </header>
       <section>
         
@@ -166,7 +166,7 @@ Beinhaltet der Zeichensatz jedoch ein Markdownsteuerzeichen (z.B: ein <code>*</c
 
 <h3>
 <a id="exkursion-einbinden" class="anchor" href="#exkursion-einbinden" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exkursion einbinden</h3>
-<p>Zunächst werden stationsübergreifende Metadaten definiert (Title, Exkursionstyp, Description usw.). Stationsinformationen (Koordinaten der Suchpunkte, die Stationsnummer usw.) werden nach den allgemeinen Exkursionsangaben jeweils unter <code>[[exkursion]]</code> im Frontmatter angegeben. Zahlen können ohne <code>" "</code>, Wörter werden zwingend mit <code>" "</code>angegeben</p>
+<p>Zunächst werden stationsübergreifende Metadaten definiert (Id, Title, Exkursionstyp, Description usw.). Stationsinformationen (Koordinaten der Suchpunkte, die Stationsnummer usw.) werden nach den allgemeinen Exkursionsangaben jeweils unter <code>[[exkursion]]</code> im Frontmatter angegeben. Zahlen können ohne <code>" "</code>, Wörter werden zwingend mit <code>" "</code>angegeben</p>
 <p><strong>Syntax</strong> Frontmatter:</p>
 <pre><code>  id = "78_E_501"
   centroid = [51.331295, 12.374468]
@@ -199,6 +199,9 @@ Beinhaltet der Zeichensatz jedoch ein Markdownsteuerzeichen (z.B: ein <code>*</c
 Neben dem Titel der Station muss zwingend die Stationsnummer übergeben werden:</p>
 <p><strong>Syntax</strong> Shortcode:</p>
 <pre><code>{{% stationstitel titel="Die Lauer" nummer="1" %}}</code></pre>
+
+<h4>Exkursionspfad</h4>
+<p>Der Exkursionsverlauf wird als Pfad in der Karte dargestellt. Das korrekte Laden der dafür benötigten Daten wird über die Angabe der Id im Frontmatter gewährleistet: <code>Id = "78_E_506"</code>.</p>
 
 <h4>Literaturangaben zur Exkursion</h4>
 <p>Literaturangaben der jeweiligen Exkursion wird stationsübergreifend im Frontmatter angegeben:</p>
